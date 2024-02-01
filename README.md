@@ -24,17 +24,17 @@ Run the script:
 bash
 Copy code
 python face_recognition_attendance.py
-##Functionality
+## Functionality
 The system uses the Haar Cascade classifier for face detection.
 Trained KNN model (faces_data.pkl) and labels (names.pkl) are loaded from the 'data' directory.
 Detected faces are resized and passed through the KNN model for recognition.
 Real-time video feed is displayed with rectangles around detected faces and their names.
 Press 'o' to mark attendance. The system will speak "Attendance Taken" and record the attendance in a CSV file with date and time stamps in the 'Attendance' directory.
 Press 'q' to exit the application.
-##Note
+## Note
 Ensure that the face recognition model (faces_data.pkl) and labels (names.pkl) are pre-trained before running the script.
 The attendance data is stored in CSV files in the 'Attendance' directory.
-##Credits
+## Credits
 This project uses OpenCV for face detection and image processing.
 The face recognition model is implemented using scikit-learn's KNeighborsClassifier.
 Text-to-speech functionality is achieved using the pywin32 library.
